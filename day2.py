@@ -1,8 +1,8 @@
-price = int(input("가격을 입력하시오: "))
-card = input("카드 종류를 입력하시오: ")
+grade = float(input("학점은? "))
+toeic = int(input("토익점수는? "))
 
-if price >= 30000 and card == "python":
-    print("배송료가 없습니다.")
+if grade >= 4.0 and toeic >= 800:
+    print("장학금을 받을 수 있습니다.")
 
 else:
-    print("배송료는 3000원 입니다.")
+    print("이번 학기는 장학금을 받을 수 없습니다.")
