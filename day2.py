@@ -1,9 +1,11 @@
 import random
 
-x = random.randint(1,100)
-y = random.randint(1,100)
+x = random.randint(1,2)
+print("동전 던지기 게임을 시작합니다.")
 
-answer = int(input(f"{x} + {y} = "))
+if x == 1:
+    print("앞면 입니다.")
+else:
+    print("뒷면 입니다.")
 
-flag = (answer == (x+y))
-print(flag)
+print("게임을 종료합니다.")
