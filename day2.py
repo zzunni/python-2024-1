@@ -1,11 +1,10 @@
-import random
+price = int(input("정가를 입력하시오: "))
 
-x = random.randint(1,2)
-print("동전 던지기 게임을 시작합니다.")
+if price >= 100:
+    print("10층에서 사은품을 받아가세요.")
+    saleprice = price * 0.85
+    print(f"할인된 가격 = {saleprice}")
 
-if x == 1:
-    print("앞면 입니다.")
 else:
-    print("뒷면 입니다.")
-
-print("게임을 종료합니다.")
+    saleprice = price * 0.9
+    print(f"할인된 가격 = {saleprice}")
