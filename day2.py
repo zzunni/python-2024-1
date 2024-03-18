@@ -1,10 +1,8 @@
-price = int(input("정가를 입력하시오: "))
+price = int(input("가격을 입력하시오: "))
+card = input("카드 종류를 입력하시오: ")
 
-if price >= 100:
-    print("10층에서 사은품을 받아가세요.")
-    saleprice = price * 0.85
-    print(f"할인된 가격 = {saleprice}")
+if price >= 30000 and card == "python":
+    print("배송료가 없습니다.")
 
 else:
-    saleprice = price * 0.9
-    print(f"할인된 가격 = {saleprice}")
+    print("배송료는 3000원 입니다.")
