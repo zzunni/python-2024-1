@@ -1,14 +1,14 @@
-today_num = int(input("오늘날짜(숫자입력): "))
-car_num = int(input("차량번호 4자리를 입력하세요: "))
+express_point = input("배송지(현재는 korea와 us만 가능): ")
+price = int(input("상품의 가격: "))
 
-if today_num % 2 == 0:
-    print("오늘은 짝수차량 입장가능.")
-    if car_num % 2 == 0:
-        print("귀하의 차량은 입차 가능합니다.")
+if express_point == "korea":
+    if price >= 20000:
+        print("배송비 = 0")
     else:
-        print("귀하의 차량은 입차 불가합니다.")
+        print("배송비 = 3000")
+
 else:
-    if car_num % 2 == 0:
-        print("귀하의 차량은 입차 불가합니다.")
+    if price >= 100000:
+        print("배송비 = 0")
     else:
-        print("귀하의 차량은 입차 가능합니다.")
+        print("배송비 = 8000")
