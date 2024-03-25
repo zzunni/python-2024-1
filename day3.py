@@ -1,7 +1,14 @@
-command = ""
-total = 0
-while command != "no":
-    num = int(input("숫자를 입력하세요: "))
-    command = input("계속?(yes/no): ")
-    total = total + num
-print(f"합계는 {total}")
+import random
+
+while True:
+   a = random.randint(1,100)
+   b = random.randint(1,100)
+
+   ans = a+b
+   input_ans = int(input(f"{a} + {b} = "))
+
+   if ans == input_ans:
+       print("잘했어요!!")
+   else:
+       print("틀렸어요. 하지만 다음번에는 잘할 수 있죠?")
+       break
