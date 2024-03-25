@@ -1,10 +1,7 @@
-target = 2000
-money = 1000
-year = 0
-rate = 0.07
+num = int(input("원하는 단은: "))
+time = 1
 
-while money < target:
-    money = money + money * rate
-    year += 1
-
-print(year,"년")
+while time <= 9:
+    for i in range(1,10):
+        print(f"{num} * {i} = {num*i}")
+        time=time+1
