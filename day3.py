@@ -1,10 +1,15 @@
-num1, num2, num3 = map(int, input("숫자 세개를 입력하세요: ").split())
-max = num1
+num1, num2, num3 = map(int, input("점수 세개를 입력하세요: ").split())
 
-if max < num2:
-    max = num2
+my_score = int(input("내 점수를 입력하세요: "))
+rank = 1
 
-if max < num3:
-    max = num3
+if my_score < num1:
+    rank = rank+1
 
-print(f"최대값은 {max}입니다.")
+if my_score < num2:
+    rank = rank+1
+
+if my_score < num3:
+    rank = rank+1
+
+print(f"나의 등수는 {rank}입니다.")
