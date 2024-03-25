@@ -1,7 +1,7 @@
-password = ""
-
-while password != "pythonisfun":
-    password = input("암호를 입력하세요: ")
-
-print("로그인 성공")
-
+command = ""
+total = 0
+while command != "no":
+    num = int(input("숫자를 입력하세요: "))
+    command = input("계속?(yes/no): ")
+    total = total + num
+print(f"합계는 {total}")
