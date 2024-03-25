@@ -1,4 +1,10 @@
-for i in range(1,10):
-    print("\n")
-    for j in range(2,10):
-        print(f"{j} * {i} = {j*i}\t", end='')
+target = 2000
+money = 1000
+year = 0
+rate = 0.07
+
+while money < target:
+    money = money + money * rate
+    year += 1
+
+print(year,"년")
