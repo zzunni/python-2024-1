@@ -1,9 +1,8 @@
-def get_area(radius):
-    area = 3.14*radius**2
-    return area
+def calculate(radius):
+    result = 3.141592 * radius ** 2
+    return result
 
-result1 = get_area(3)
-result2 = get_area(20)
+radius = int(input("반지름을 입력하시오: "))
+result = calculate(radius)
 
-print(f"반지름이 3인 원의 면적 = {result1}")
-print(f"반지름이 20인 원의 면적 = {result2}")
+print(f"반지름이 {radius}인 원의 면적은 {result}입니다.")
