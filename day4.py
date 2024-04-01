@@ -1,6 +1,11 @@
-def hong_address():
-    print("서울특별시 종로구 1번지")
-    print("파이썬 빌딩 7층")
-    print("홍길동")
+def meet(fromcountry):
+    if fromcountry == "1":
+        print("안녕.")
+    elif fromcountry == "2":
+        print("Hello")
+    elif fromcountry == "3":
+        print("고니찌와")
 
-hong_address()
+country = input("where are you from? 1.한국 2.USQ 3.Japan : ")
+
+meet(country)
