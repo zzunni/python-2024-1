@@ -1,8 +1,8 @@
-def calculate(radius):
-    result = 3.141592 * radius ** 2
-    return result
+def cal_sum(n):
+    sum = 0
+    for i in range(1,n+1):
+        sum = sum+i
+    return sum
 
-radius = int(input("반지름을 입력하시오: "))
-result = calculate(radius)
-
-print(f"반지름이 {radius}인 원의 면적은 {result}입니다.")
+hap = cal_sum(100)
+print(hap)
