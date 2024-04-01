@@ -1,11 +1,9 @@
-def meet(fromcountry):
-    if fromcountry == "1":
-        print("안녕.")
-    elif fromcountry == "2":
-        print("Hello")
-    elif fromcountry == "3":
-        print("고니찌와")
+def get_area(radius):
+    area = 3.14*radius**2
+    return area
 
-country = input("where are you from? 1.한국 2.USQ 3.Japan : ")
+result1 = get_area(3)
+result2 = get_area(20)
 
-meet(country)
+print(f"반지름이 3인 원의 면적 = {result1}")
+print(f"반지름이 20인 원의 면적 = {result2}")
