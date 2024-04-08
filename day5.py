@@ -1,25 +1,19 @@
-score = []
+blood = []
 
-for i in range(5):
-    score.append(int(input("성적을 입력하시오: ")))
+while True:
+    blood.append(input("혈액형을 선택하세요(A,B,AB,O): "))
+    print("헌혈해주셔서 감사합니다. ")
 
+    print("--------------------")
+    print(f"A형: {blood.count('A')}")
+    print(f"B형: {blood.count('B')}")
+    print(f"AB형: {blood.count('AB')}")
+    print(f"O형: {blood.count('O')}")
 
-total = 0
-for i in score:
-    total = total + i
+    command = input("입력을 계속할까요?(Yes/No): ")
 
-mean = total/len(score)
-score_sorted = sorted(score)  # 정렬된 리스트를 반환받습니다.
+    if command == 'Yes':
+        continue
 
-max = score_sorted[-1]  # 정렬된 리스트의 마지막 요소가 최대값입니다.
-min= score_sorted[0]   # 정렬된 리스트의 첫 번째 요소가 최소값입니다.
-
-num = 0
-for i in score:
-    if i >= 80:
-        num = num+1
-
-print(f"성적평균: {mean}")
-print(f"최대점수: {max}")
-print(f"최소점수: {min}")
-print(f"80점이상: {num}")
+    elif command == 'No':
+        break
