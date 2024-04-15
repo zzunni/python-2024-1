@@ -1,13 +1,15 @@
-s = [[1,2,3,4,5],
-     [6,7,8,9,10],
-     [11,12,13,14,15]]
 
 
-rows = len(s)
-cols = len(s[0])
+first = input("첫 번째 문자열: ")
+second = input("두 번째 문자열: ")
 
-for r in range(rows):
-    for c in range(cols):
-        print(s[r][c], end=',')
+ans = set(first) & set(second)
 
-    print()
+print("공통적인 글자:", end="")
+
+for i in ans:
+    print(i,end="")
+
+
+
+
