@@ -1,6 +1,6 @@
 # 얕은 복사, 깊은 복사
-temps = [28.31,33,35,27,26,25]
-values = temps
-
-id(temps)
-id(values)
+a = 10
+if a%2 == 0:
+    print("짝수")
+else:
+    print("홀수")
