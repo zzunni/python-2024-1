@@ -1,7 +1,5 @@
-x = int(input(" 첫번째 수 = "))
-y = int(input(" 두번째 수 = "))
 
-max_value = (x if x>y else y)
-min_value = (x if x<y else y)
+numlist = [x for x in range(100) if x%2 == 0 and x%3 ==0]
+print(numlist)
 
-print(f"큰 수 = {max_value}, 작은 수 = {min_value}")
+
