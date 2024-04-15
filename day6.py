@@ -1,15 +1,4 @@
+stock = {'커피음료':7, '펜':3, '종이컵':2, '우유':1, '콜라':4, '책':6}
 
-
-first = input("첫 번째 문자열: ")
-second = input("두 번째 문자열: ")
-
-ans = set(first) & set(second)
-
-print("공통적인 글자:", end="")
-
-for i in ans:
-    print(i,end="")
-
-
-
-
+item = input("물건의 이름을 입력하시오: ")
+print(stock[item])
