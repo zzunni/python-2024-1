@@ -1,9 +1,18 @@
-munja = input("문자열 입력: ")
+a = input("문자열을 입력하시오: ")
 
-if munja[:] == munja[::-1]:
-    print("회문입니다.")
+sum1 = 0
+sum2 = 0
+sum3 = 0
 
-else:
-    print("회문이 아닙니다.")
+for i in range(len(a)):
+    if a[i].isdigit() == True:
+        sum1 +=1
 
+    elif a[i].isspace() == True:
+        sum2 +=1
 
+    elif a[i].isalpha() == True:
+        sum3 +=1
+
+info = {"digit":sum1, "spaces":sum2, "alpha":sum3}
+print(info)
