@@ -1,6 +1,13 @@
-a = input("문자열을 입력하시오: ")
+import turtle
+import random
+turtle.shape("turtle")
+colors = ['red', 'blue', 'yellow', 'green', 'violet', 'orange']
 
-new_A = a.split()
-
-for i in new_A:
-    print(i[0].upper(),end= '')
+for i in range(200):
+    color = random.choice(colors)
+    turtle.bgcolor('black')
+    turtle.color(colors[i%6])
+    turtle.speed(50)
+    turtle.width(3)
+    turtle.forward(10+5*i)
+    turtle.right(89)
