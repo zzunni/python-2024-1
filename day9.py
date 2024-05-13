@@ -1,12 +1,13 @@
-class Human:
-    def __init__(self,name):
-        self.name = name
+class Television:
+    def __init__(self,channel,volume,on):
+        self.channel = channel
+        self.volume = volume
+        self.on = on
+    def show(self):
+        print(self.channel, self.volume, self.on)
 
-    def test(self):
-        print("냐는", self.name)
+    def setChannel(self, channel):
+        self.channel = channel
 
-lee =  Human("이순신")
-kim = Human("이성계")
-
-lee.test()
-kim.test()
+    def getChannel(self):
+        return self.channel
