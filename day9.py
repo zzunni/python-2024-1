@@ -1,15 +1,13 @@
-class Car:
-    def __init__(self, speed, color, model):
-        self.speed = speed
-        self.color = color
-        self.model = model
+class Counter:
+    def __init__(self, initValue=0):
+        self.count = initValue
 
-    def drive(self):
-        self.speed = 60
+    def increment(self):
+        self.count += 1
 
-myCar = Car(0, "blue", "E-Class")
+    def __str__(self):
+        msg = "카운트 값" + str(self.count)
+        return msg
 
-print("자동차 객체를 생성하였습니다.")
-print("자동차의 속도는",myCar.speed)
-print("자동차의 색상은", myCar.color)
-print("자동차의 모델은", myCar.model)
+a = Counter(100)
+print(a)
