@@ -1,17 +1,15 @@
-class Circle:
-    def __init__(self,r):
-        self.r= r
+class Car:
+    def __init__(self, speed, color, model):
+        self.speed = speed
+        self.color = color
+        self.model = model
 
-    def getArea(self):
-        area = self.r * self.r * 3.141592
-        return area
+    def drive(self):
+        self.speed = 60
 
-    def getPerimeter(self):
-        perimeter = 2 * self.r * 3.141592
-        return perimeter
+myCar = Car(0, "blue", "E-Class")
 
-
-c = Circle(10)
-
-print(f"원의 면적 {c. getArea()}")
-print(f"원의 둘레 {c.getPerimeter()}")
+print("자동차 객체를 생성하였습니다.")
+print("자동차의 속도는",myCar.speed)
+print("자동차의 색상은", myCar.color)
+print("자동차의 모델은", myCar.model)
